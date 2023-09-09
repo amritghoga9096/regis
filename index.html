@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Microsoft YaHei , sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            
+           
+            background-color: black;
+            
+        }
+
+        .header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            margin-top: -225px;
+            padding: 10px;
+            position: absolute ;
+         
+        }
+
+        .header h1 {
+          margin-top: 180px;
+          margin-left: 10px;
+           
+        }
+
+        .back-button {
+            position: absolute;
+            
+          
+            
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        img{
+           margin-top: -3px;
+           
+            
+        }
+
+        .container {
+            
+            padding: 10px;
+            background-color: black;
+            text-align: center;
+            margin-bottom: 10px;
+            box-shadow: -1px 2px 8px #fff;
+        }
+
+        .form-input {
+            width: 80%;
+            padding: 10px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            
+        }
+
+        .register-button {
+            width: 80%;
+            padding: 10px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #0592bd;
+            color: white;
+            
+        }
+
+        .register-button:hover{
+            background-color: #08e7e7;
+        }
+
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.589);
+        }
+
+       
+
+       
+
+        .login-link {
+            color: rgb(9, 197, 225);
+            text-decoration:none ;
+        }
+        
+        
+
+        @media (max-width: 600px) {
+            /* Smartphone interface styles */
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .back-button {
+                left: 7px;
+               
+            }
+
+            .container {
+                
+                margin: 10px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="img" style="text-align: center;">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.kdTCqxiG8nbB5BeGdf-yqwHaEK&pid=Api&P=0&h=180" alt="" style="width: 100%;">
+       </div>
+       <div class="header">
+       
+        <h1 style="">Register</h1>
+        
+    </div>
+    <div class="container">
+        <form>
+           
+            <input type="number" name="tel" class="form-input" placeholder="Phone Number" required minlength="10" maxlength="12" size="12">
+            <input type="password" class="form-input" placeholder="Enter Password">
+            <input type="password" class="form-input" placeholder="Confirm Password">
+            <input type="password" class="form-input" placeholder="Enter Withdrawal Password">
+            <input type="text" class="form-input" placeholder="Invitation code">
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        <p style="color:rgb(119, 132, 138);">Already have an account? <a href="#" class="login-link">Login</a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
